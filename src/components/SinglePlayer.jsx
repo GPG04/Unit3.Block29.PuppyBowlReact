@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchSinglePlayer } from '../API'
 import { useParams, useNavigate } from 'react-router-dom'
+import { deletePlayer } from '../API'
 
 export default function SinglePlayer() {
     const navigate = useNavigate()
@@ -38,7 +39,7 @@ export default function SinglePlayer() {
       {error && <p>{error}</p>}
       {player && 
       <div>
-      <img src={player.imageUrl} alt="yo" className="images"/>
+      <img src={player.imageUrl} alt="puppy image" className="images"/>
       <h3 key={player.id}>{player.name}</h3>
       <h3>{player.breed}</h3>
       <button onClick={handleDelete}>Delete Player</button>
