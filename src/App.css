@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.images {
+  max-width: 300px;
+}
+
+.puppyDiv {
+  border-color: black;
+  border-width: 10px;
+}
+
+#flexContainer {
+  display: flex;
+}
