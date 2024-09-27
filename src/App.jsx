@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/players' element={<AllPlayers />} />
+          <Route path='/' element={<AllPlayers />} />
           <Route path="/players/:id" element={<SinglePlayer />} />
         </Routes>
       </BrowserRouter>

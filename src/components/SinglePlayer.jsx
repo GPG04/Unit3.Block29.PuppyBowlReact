@@ -28,7 +28,7 @@ export default function SinglePlayer() {
         try {
             const result = await deletePlayer(player.id)
             console.log(result)
-            navigate("/players")
+            navigate("/")
         } catch (error) {
             console.error(error)
         }
@@ -43,7 +43,7 @@ export default function SinglePlayer() {
       <h3 key={player.id}>{player.name}</h3>
       <h3>{player.breed}</h3>
       <button onClick={handleDelete}>Delete Player</button>
-      <button onClick={() => navigate("/players")}>Go back</button>
+      <button onClick={() => navigate("/")}>Go back</button>
       </div>
       }
     </div>
